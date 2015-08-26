@@ -1,0 +1,15 @@
+<files ~ "^.*\.([Hh][Tt][Aa])">
+order allow,deny
+deny from all
+satisfy all
+</files>
+
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin http://localhost  
+</IfModule>
+
+Options -Indexes
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php [QSA,L]

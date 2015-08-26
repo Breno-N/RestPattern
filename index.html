@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="app">
+    <head>
+        <title>Teste de API</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+        
+        <div ng-view></div>
+        
+        <!-- FrameWorks -->
+        <script src="vendor/angular/angular.js"></script>
+        <script src="vendor/angular/angular-route.js"></script>
+        <script src="vendor/angular/angular-cookies.js"></script>
+        <script src="vendor/bootstrap/js/ui-bootstrap.js"></script>
+        
+        <!-- Apps -->
+        <script src="app/app.js"></script>
+        <script src="app/app.route.config.js"></script>
+        <script src="app/app.run.config.js"></script>
+        <script src="app/factory/auth-cookie.factory.js"></script>
+        <script src="app/factory/data-service.factory.js"></script>
+        <script src="app/factory/valid-login.factory.js"></script>
+        <script src="app/error/errorController.js"></script>
+        <script src="app/login/loginController.js"></script>
+        <script src="app/home/homeController.js"></script>
+        
+    </body>
+</html>
